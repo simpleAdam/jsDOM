@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../src/jsDOM.js"></script>
+</head>
+<body>
+	<div id="app"></div>
+	<script>
+		let frag=document.createDocumentFragment()
+
+		let mydiv=new StyledComponent
+		mydiv.init('div')
+		.css({width:"500px",height:"300px",background:"#111",color:"#eeeb"})
+		.attr({class:"mydiv",draggable:true})
+		.text("jsDOM div")
+
+		frag.appendChild(mydiv.el)
+		app.appendChild(frag)
+	</script>
+</body>
+</html>
