@@ -26,8 +26,9 @@ class StyledComponent{
 				return this
 			}
 			text(message) {
-				if(!this.textNode) {this.textNode=document.createTextNode("message"); this.append(this.textNode)}
-				else {this.textNode.textContent=message}
+				if(!this.textNode) {
+					this.textNode=document.createTextNode("message"); this.append(this.textNode)}
+				if(message) {this.textNode.textContent=message}
 				return this
 			}
 			append(chld) {
