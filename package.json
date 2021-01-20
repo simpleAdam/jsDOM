@@ -1,0 +1,26 @@
+{
+  "name": "jsDOM",
+  "version": "1.0.0",
+  "description": "a javascript DOM builder",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpleAdam/jsDOM.git"
+  },
+  "keywords": [],
+  "author": "Adam James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simpleAdam/jsDOM/issues"
+  },
+  "homepage": "https://github.com/simpleAdam/jsDOM#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  }
+}
