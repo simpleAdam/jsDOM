@@ -43,3 +43,5 @@ class StyledComponent {
     return this;
   }
 }
+
+module.exports=StyledComponent

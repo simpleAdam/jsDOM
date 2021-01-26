@@ -2,7 +2,7 @@
   "name": "jsDOM",
   "version": "1.0.0",
   "description": "a javascript DOM builder",
-  "main": "index.js",
+  "main": "./src/jsDOM.js",
   "directories": {
     "example": "examples"
   },
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/simpleAdam/jsDOM#readme",
   "devDependencies": {
-    "eslint": "^7.18.0"
+    "enzyme": "^3.11.0",
+    "eslint": "^7.18.0",
+    "jest": "^26.6.3"
   }
 }
