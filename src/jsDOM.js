@@ -6,6 +6,10 @@ class StyledComponent {
     this.create(tag);
     return this;
   }
+  /**
+   * 
+   * @param {object} modifier 
+   */
   initWith(modifier) {
     this.create(modifier.tag);
     this.css(modifier.styles);
@@ -17,25 +21,26 @@ class StyledComponent {
     return this;
   }
   attr(obj) {
-    for (let key in obj) {
+    for (const key in obj) {
       this.el.setAttribute(key, obj[key]);
     }
     return this;
   }
   css(styles) {
-    for (let key in styles) {
+    for (const key in styles) {
       this.el.style[key] = styles[key];
     }
     return this;
   }
   text(message) {
-    if (!this.textNode) {
+    /*if (!this.textNode) {
       this.textNode = document.createTextNode("message");
       this.append(this.textNode);
     }
     if (message) {
       this.textNode.textContent = message;
-    }
+    }*/
+    this.el.textContent=message
     return this;
   }
   append(chld) {

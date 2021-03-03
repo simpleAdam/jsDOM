@@ -7,7 +7,8 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jest": "jest",
+    "lint":"eslint ./src/jsDOM.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,10 @@
   },
   "homepage": "https://github.com/simpleAdam/jsDOM#readme",
   "devDependencies": {
-    "enzyme": "^3.11.0",
     "eslint": "^7.18.0",
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "jsdom": "^16.4.0"
   }
 }
